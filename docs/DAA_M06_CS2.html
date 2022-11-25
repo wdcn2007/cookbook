@@ -1313,8 +1313,9 @@ None
 
 
 <span class=" -Color -Color-Bold">Identity dataset</span>
-
-&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 144233 entries, 0 to 144232
 Data columns (total 41 columns):
  #   Column         Non-Null Count   Dtype  
@@ -1381,8 +1382,9 @@ None
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Transaction dataset</span>
-
-       TransactionID        isFraud  TransactionDT  TransactionAmt  \
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       TransactionID        isFraud  TransactionDT  TransactionAmt  \
 count   5.905400e+05  590540.000000   5.905400e+05   590540.000000   
 mean    3.282270e+06       0.034990   7.372311e+06      135.027176   
 std     1.704744e+05       0.183755   4.617224e+06      239.162522   
@@ -2314,9 +2316,8 @@ max    104060.000000
 
 
 <span class=" -Color -Color-Bold">Identity dataset</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       TransactionID          id_01          id_02         id_03  \
+
+       TransactionID          id_01          id_02         id_03  \
 count   1.442330e+05  144233.000000  140872.000000  66324.000000   
 mean    3.236329e+06     -10.170502  174716.584708      0.060189   
 std     1.788496e+05      14.347949  159651.816856      0.598231   
@@ -2435,8 +2436,9 @@ These fraudulent transactions represent approximately 3.50% of all transactions.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Average transaction amounts for fraud and non fraud</span>
-
-isFraud
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>isFraud
 0    134.511665
 1    149.244779
 Name: TransactionAmt, dtype: float64
@@ -2452,6 +2454,10 @@ H          0.047662   33024
 R          0.037826   37699
 S          0.058996   11628
 W          0.020399  439670
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5866/2656278314.py:6: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+  print(transaction.groupby(&#39;isFraud&#39;).mean()[&#39;TransactionAmt&#39;])
 </pre></div>
 </div>
 </div>
@@ -2833,7 +2839,9 @@ Data columns (total 100 columns):
 dtypes: float64(100)
 memory usage: 52.8 MB
 None
-&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 68519 entries, 0 to 68518
 Data columns (total 100 columns):
  #   Column  Non-Null Count  Dtype  
@@ -2988,7 +2996,9 @@ Data columns (total 39 columns):
 dtypes: float64(39)
 memory usage: 20.9 MB
 None
-&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 68519 entries, 0 to 68518
 Data columns (total 38 columns):
  #   Column  Non-Null Count  Dtype  
@@ -3071,6 +3081,216 @@ memory usage: 80.4 MB
 None
 [&#39;isFraud&#39;, &#39;TransactionDT&#39;, &#39;TransactionAmt&#39;, &#39;card1&#39;, &#39;card2&#39;, &#39;card3&#39;, &#39;card5&#39;, &#39;C1&#39;, &#39;C2&#39;, &#39;C3&#39;, &#39;C4&#39;, &#39;C5&#39;, &#39;C6&#39;, &#39;C7&#39;, &#39;C8&#39;, &#39;C9&#39;, &#39;C10&#39;, &#39;C11&#39;, &#39;C12&#39;, &#39;C13&#39;, &#39;C14&#39;, &#39;D1&#39;, &#39;D4&#39;, &#39;D6&#39;, &#39;D10&#39;, &#39;D12&#39;, &#39;D15&#39;, &#39;V12&#39;, &#39;V13&#39;, &#39;V14&#39;, &#39;V15&#39;, &#39;V16&#39;, &#39;V17&#39;, &#39;V18&#39;, &#39;V19&#39;, &#39;V20&#39;, &#39;V21&#39;, &#39;V22&#39;, &#39;V23&#39;, &#39;V24&#39;, &#39;V25&#39;, &#39;V26&#39;, &#39;V27&#39;, &#39;V28&#39;, &#39;V29&#39;, &#39;V30&#39;, &#39;V31&#39;, &#39;V32&#39;, &#39;V33&#39;, &#39;V34&#39;, &#39;V35&#39;, &#39;V36&#39;, &#39;V37&#39;, &#39;V38&#39;, &#39;V39&#39;, &#39;V40&#39;, &#39;V41&#39;, &#39;V42&#39;, &#39;V43&#39;, &#39;V44&#39;, &#39;V45&#39;, &#39;V46&#39;, &#39;V47&#39;, &#39;V48&#39;, &#39;V49&#39;, &#39;V50&#39;, &#39;V51&#39;, &#39;V52&#39;, &#39;V53&#39;, &#39;V54&#39;, &#39;V55&#39;, &#39;V56&#39;, &#39;V57&#39;, &#39;V58&#39;, &#39;V59&#39;, &#39;V60&#39;, &#39;V61&#39;, &#39;V62&#39;, &#39;V63&#39;, &#39;V64&#39;, &#39;V65&#39;, &#39;V66&#39;, &#39;V67&#39;, &#39;V68&#39;, &#39;V69&#39;, &#39;V70&#39;, &#39;V71&#39;, &#39;V72&#39;, &#39;V73&#39;, &#39;V74&#39;, &#39;V75&#39;, &#39;V76&#39;, &#39;V77&#39;, &#39;V78&#39;, &#39;V79&#39;, &#39;V80&#39;, &#39;V81&#39;, &#39;V82&#39;, &#39;V83&#39;, &#39;V84&#39;, &#39;V85&#39;, &#39;V86&#39;, &#39;V87&#39;, &#39;V88&#39;, &#39;V89&#39;, &#39;V90&#39;, &#39;V91&#39;, &#39;V92&#39;, &#39;V93&#39;, &#39;V94&#39;, &#39;V95&#39;, &#39;V96&#39;, &#39;V97&#39;, &#39;V98&#39;, &#39;V99&#39;, &#39;V100&#39;, &#39;V101&#39;, &#39;V102&#39;, &#39;V103&#39;, &#39;V104&#39;, &#39;V105&#39;, &#39;V106&#39;, &#39;V107&#39;, &#39;V108&#39;, &#39;V109&#39;, &#39;V110&#39;, &#39;V111&#39;, &#39;V112&#39;, &#39;V113&#39;, &#39;V114&#39;, &#39;V115&#39;, &#39;V116&#39;, &#39;V117&#39;, &#39;V118&#39;, &#39;V119&#39;, &#39;V120&#39;, &#39;V121&#39;, &#39;V122&#39;, &#39;V123&#39;, &#39;V124&#39;, &#39;V125&#39;, &#39;V126&#39;, &#39;V127&#39;, &#39;V128&#39;, &#39;V129&#39;, &#39;V130&#39;, &#39;V131&#39;, &#39;V132&#39;, &#39;V133&#39;, &#39;V134&#39;, &#39;V135&#39;, &#39;V136&#39;, &#39;V137&#39;, &#39;V279&#39;, &#39;V280&#39;, &#39;V281&#39;, &#39;V282&#39;, &#39;V283&#39;, &#39;V284&#39;, &#39;V285&#39;, &#39;V286&#39;, &#39;V287&#39;, &#39;V288&#39;, &#39;V289&#39;, &#39;V290&#39;, &#39;V291&#39;, &#39;V292&#39;, &#39;V293&#39;, &#39;V294&#39;, &#39;V295&#39;, &#39;V296&#39;, &#39;V297&#39;, &#39;V298&#39;, &#39;V299&#39;, &#39;V300&#39;, &#39;V301&#39;, &#39;V302&#39;, &#39;V303&#39;, &#39;V304&#39;, &#39;V305&#39;, &#39;V306&#39;, &#39;V307&#39;, &#39;V308&#39;, &#39;V309&#39;, &#39;V310&#39;, &#39;V311&#39;, &#39;V312&#39;, &#39;V313&#39;, &#39;V314&#39;, &#39;V315&#39;, &#39;V316&#39;, &#39;V317&#39;, &#39;V318&#39;, &#39;V319&#39;, &#39;V320&#39;, &#39;V321&#39;, &#39;id_01&#39;, &#39;id_02&#39;, &#39;id_11&#39;, &#39;id_13&#39;, &#39;id_17&#39;, &#39;id_19&#39;, &#39;id_20&#39;]
 There are 0 missing values
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5866/2451716702.py:6: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for (columnName, columnData) in fraud_numeric.iteritems():
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
+/tmp/ipykernel_5866/2451716702.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fraud_numeric2[columnName] = columnData
 </pre></div>
 </div>
 </div>
